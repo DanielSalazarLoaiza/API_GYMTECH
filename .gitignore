@@ -1,0 +1,8 @@
+
+node_modules
+npm-debug.log
+package-lock.json
+npm-debug.log.*
+.env
+.vscode
+.DS_Store

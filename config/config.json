@@ -1,0 +1,29 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "gymtech_api",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "admin",
+    "password": null,
+    "database": "gymtech_api",
+    "host": "dpg-d35gaal6ubrc73ct7ong-a",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
