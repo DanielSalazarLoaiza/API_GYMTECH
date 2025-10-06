@@ -8,6 +8,7 @@ module.exports = {
       [
         {
           name: "administrador",
+          picture: "https://pbs.twimg.com/media/Bhf_XUwCYAAfY2A.jpg",
           documentType: "CC",
           document: "123456789",
           birthdate: "2000-01-01",
@@ -28,6 +29,7 @@ module.exports = {
         },
         {
           name: "entrenador",
+          picture: "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2021/12/cyberpunk-2077-johnny-silverhand-keanu-reeves-2567861.jpg?tf=1200x1200",
           documentType: "CC",
           document: "123456788",
           birthdate: "2000-01-01",
@@ -48,6 +50,7 @@ module.exports = {
         },
         {
           name: "aprendiz",
+          picture: "https://image-cdn.flowgpt.com/trans-images/1751467202353-8ed9cdc2-b149-484e-bedd-2f4bcd788e10.webp",
           documentType: "CC",
           document: "123446789",
           birthdate: "2000-01-01",

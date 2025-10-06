@@ -34,6 +34,7 @@ const createUser = async (data) => {
     try {
         let newUser = await db.user.create({
             name: data.name, 
+            picture: data.picture,
             documentType: data.documentType,
             document: data.document,
             birthdate: data.birthdate,
@@ -63,6 +64,7 @@ const updateUser = async (id, data) => {
         let updatedUser = await db.user.update(
             {
                 name: data.name, 
+                picture: data.picture,
                 documentType: data.documentType,
                 document: data.document,
                 birthdate: data.birthdate,

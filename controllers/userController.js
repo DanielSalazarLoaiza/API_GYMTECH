@@ -20,9 +20,10 @@ const getUser = async (req, res) => {
 };
 
 const createUser = async (req, res) => {
-    let { name, documentType, document, birthdate, email, gender, status, phone, eps, blood_type, weight, stature, emergency_phone, password, observations, id_role, id_group, id_trainingcenter } = req.body;
+    let { name, picture, documentType, document, birthdate, email, gender, status, phone, eps, blood_type, weight, stature, emergency_phone, password, observations, id_role, id_group, id_trainingcenter } = req.body;
     const createdUser = await UserService.createUser({
         name,
+        picture,
         documentType,
         document,
         birthdate,
@@ -50,10 +51,11 @@ const createUser = async (req, res) => {
 
 const updateUser = async (req, res) => {
     let id = req.params.id;
-    let { name, documentType, document, birthdate, email, gender, status, phone, eps, blood_type, weight, stature, emergency_phone, password, observations, id_role, id_group, id_trainingcenter } = req.body;
+    let { name, picture, documentType, document, birthdate, email, gender, status, phone, eps, blood_type, weight, stature, emergency_phone, password, observations, id_role, id_group, id_trainingcenter } = req.body;
 
     const updatedUser = await UserService.updateUser(id, {
         name,
+        picture,
         documentType,
         document,
         birthdate,

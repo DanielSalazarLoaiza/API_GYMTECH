@@ -21,6 +21,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   user.init({
     name: DataTypes.STRING,
+    picture: DataTypes.STRING,
     documentType: DataTypes.STRING,
     document: DataTypes.STRING,
     birthdate: DataTypes.DATE,
@@ -52,7 +53,7 @@ module.exports = (sequelize, DataTypes) => {
         email: email
       },
       // Se específican los campos que se dean excluir de la consulta
-      attributes: { exclude: ['birthdate', 'gender', 'status', 'eps', 'blood_type', 'weight', 'stature', 'emergency_phone', 'password', 'observations', 'id_group', 'id_trainingcenter'] },
+      attributes: { exclude: ['picture' ,'birthdate', 'gender', 'status', 'eps', 'blood_type', 'weight', 'stature', 'emergency_phone', 'password', 'observations', 'id_group', 'id_trainingcenter'] },
       include: [
         {
           model: sequelize.models.role,
