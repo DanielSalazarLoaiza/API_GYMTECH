@@ -27,7 +27,6 @@ app.get('/', (req, resp) => {
 
 app.set('PORT', process.env.PORT || 4000);
 
-
 //Routes
 app.use('/api/v1/auth', require('./api/v1/routes/auth.routes')); // Auth
 app.use('/api/v1/users', require('./api/v1/routes/users.routes')); // Usuarios
@@ -46,6 +45,7 @@ app.use('/api/v1/incomerecords', require('./api/v1/routes/incomerecord.routes'))
 app.use('/api/v1/calendars', require('./api/v1/routes/calendar.routes')); // Calendarios
 app.use('/api/v1/apprenticereserves', require('./api/v1/routes/apprenticereserve.routes')); // Reservas - Aprendices
 app.use('/api/v1/phrases', require('./api/v1/routes/phrase.routes')); // Frases
+app.use('/api/v1/passwordResetTokens', require('./api/v1/routes/passwordResetToken.routes')); // Tokens de Restablecimiento de Contraseña
 
 app.listen(app.get('PORT'), () => {
     console.log(`server running on port ${app.get('PORT')}`);
